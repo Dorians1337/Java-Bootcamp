@@ -1,21 +1,28 @@
 package sef.module6.activity;
+
 public class InheritanceActivity {
+
     public static void main(String[] args) {
-        Person_I p = new Person_I();
-        p.setName("Sarah Johnson");
-        p.setAge(21);
-        Employee_I e = new Employee_I();
-        e.setName("John Doe");
-        e.setAge(30);
-        e.setSalary(70000);
-        e.setTitle("QA Automation Engineer");
+
+        Person_I myPerson = new Person_I();
+        myPerson.setName("Sarah Johnson");
+        myPerson.setAge(21);
+
         System.out.println("-----------------------------");
-        System.out.println("Person Name : " + p.getName());
-        System.out.println("Person Age  : " + p.getAge());
+        Employee_I myEmployee = new Employee_I();
+        myEmployee.setSalary(70000.00);
+        myEmployee.setTitle("Developer");
+        myEmployee.setAge(32);
+        myEmployee.setName("Shawn Cun");
+
         System.out.println("-----------------------------");
-        System.out.println("Employee Name   : " + e.getName());
-        System.out.println("Employee Age    : " + e.getAge());
-        System.out.println("Employee Title  : " + e.getTitle());
-        System.out.println("Employee Salary : $" + e.getSalary());
+        System.out.println("Employee's Name is : " + myEmployee.getName());
+        System.out.println("Employee's Age is : " + myEmployee.getAge());
+        System.out.println("Employee's Title is : " + myEmployee.getTitle());
+        System.out.println("Employee's Salary is : " + myEmployee.getSalary());
+
+        System.out.println("-----------------------------");
+        System.out.println("Person's Name is : " + myPerson.getName());
+        System.out.println("Person's Age is : " + myPerson.getAge());
     }
 }
